@@ -1,26 +1,17 @@
 {
-  "name": "java_do_not_sue_me_plz_server",
-  "version": "1.0.0",
-  "description": "A server project for final",
-  "main": "index.js",
+  "name": "java-do-not-sue-me-plz-server",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "java_do_not_sue_me_plz(ser .v)"
-  },
-  "keywords": [
-    "nodejs",
-    "express"
-  ],
-  "author": "YCHuang",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
     "firebase": "^4.13.1",
-    "fs": "0.0.1-security",
-    "http": "0.0.0",
-    "path": "^0.12.7"
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
   }
 }
