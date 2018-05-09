@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>QQQQQ</title>
+    <title>紫外線UV指數</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
 </head>
+<script type="text/javascript" src="../routes/weather.js"></script>
 <body>
-
+    <form>
+     <fieldset>
+        <label for="CountySelect">Choose County</label>
+        <select id="CountySelect">
+            <option value="Chayi">嘉義市</option>
+            <option value="Taichung">台中市</option>
+            <option value="Penghu">澎湖縣</option>
+            <option value="Yilan">宜蘭縣</option>
+            <option value="Kingmen">金門縣</option>
+            <option value="Nantuo">南投縣</option>
+            <option value="Taitong">台東縣</option>
+            <option value="Taoyuan">桃園市</option>
+            <option value="Keelung">基隆市</option>
+            <option value="Pingtung">屏東縣</option>
+            <option value="Shingtsu">新竹縣</option>
+            <option value="Tainan">台南市</option>
+            <option value="Kaoshung">高雄市</option>
+            <option value="Lianchang">連江縣</option>
+            <option value="Hualian">花蓮縣</option>
+            <option value="NewTaipei">新北市</option>
+            <option value="Miaoli">苗栗縣</option>
+            <option value="Changhua">彰化縣</option>
+            <option value="Yunlin">雲林縣</option>
+        </select>
+     </fieldset>
+    </form>
+    <input id="sumbit" class="button-primary" type="submit" value="Send">
+    <table>
+        <thead>
+        <tr id="result" style="display: none;">
+            <th>地區</th>
+            <th>監測站</th>
+            <th>UV指數</th>
+            <th>最後更新時間</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="result1" style="display: none;">
+            <td>Stephen Curry</td>
+            <td>27</td>
+            <td>1,91</td>
+            <td>Akron, OH</td>
+        </tr>
+        <tr id="result2" style="display: none;">
+            <td>Klay Thompson</td>
+            <td>25</td>
+            <td>2,01</td>
+            <td>Los Angeles, CA</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>

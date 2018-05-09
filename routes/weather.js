@@ -29,8 +29,10 @@ router.route('/get')
                     message += JSON.stringify(body[i].County) + JSON.stringify(body[i].SiteName)
                         + JSON.stringify(body[i].UVI) + JSON.stringify(body[i].PublishTime) + os.EOL + "<br>";
                 }
+                console.log(message);
             }
         })
+
     });
 
 module.exports = router;
