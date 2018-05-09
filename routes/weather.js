@@ -5,7 +5,7 @@ let os = require('os');
 let path = require('path');
 
 //api and website setup
-let api = "CWB-C8F35671-BAAC-4CC5-9290-C56AF261E1FA";
+let api = "...";
 let data_type = "F-C0032-001";
 let site = `http://opendata.epa.gov.tw/ws/Data/UV/?$orderby=PublishAgency&$skip=0&$top=1000&format=json`;
 
