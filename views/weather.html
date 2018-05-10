@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>紫外線UV指數</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="http://discordemoji.com/assets/emoji/thinkaboutit.png" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/module/TEST.js"></script>
 </head>
-<script type="text/javascript" src="../routes/weather.js"></script>
+
 <body>
     <form>
      <fieldset>
@@ -35,10 +41,11 @@
         </select>
      </fieldset>
     </form>
-    <input id="sumbit" class="button-primary" type="submit" value="Send">
-    <table>
+
+    <button id="Send" class="button-primary">click</button>
+    <table id="result" style="display: none;">
         <thead>
-        <tr id="result" style="display: none;">
+        <tr>
             <th>地區</th>
             <th>監測站</th>
             <th>UV指數</th>
@@ -46,13 +53,13 @@
         </tr>
         </thead>
         <tbody>
-        <tr id="result1" style="display: none;">
+        <tr>
             <td>Stephen Curry</td>
             <td>27</td>
             <td>1,91</td>
             <td>Akron, OH</td>
         </tr>
-        <tr id="result2" style="display: none;">
+        <tr>
             <td>Klay Thompson</td>
             <td>25</td>
             <td>2,01</td>
@@ -60,6 +67,16 @@
         </tr>
         </tbody>
     </table>
+
+
+<script>
+    $(function(){
+        $('#Send').on('click', function(){
+            $('#result').css('display', 'block');
+        });
+    });
+</script>
+
 </body>
 
 </html>
